@@ -15,62 +15,60 @@ Ce projet est une plateforme de streaming vidéo complète réalisée en **React
 ### Backend (Node.js)
 - Express.js
 - MongoDB + Mongoose
-
+- JWT (authentification)
+- Nodemailer
 ---
 
-##  Installation
+✨ Fonctionnalités
+- Authentification sécurisée avec JWT
+
+- Affichage des vidéos dans une interface React moderne
+
+- Upload, modification et suppression de vidéos par l'utilisateur
+
+- Middleware pour sécuriser les routes API
+
+ Envoi de mails via Nodemailer
+
+ -----
+
+ Structure
+
+ siteStreaming-JS-react/
+├── App-Serveur/
+│   ├── Controllers/
+│   ├── middelware/
+│   ├── models/
+│   ├── routes/
+│   ├── mailer.js
+│   ├── server.js
+│   └── .env
+│
+├── siteStreaming/
+│   ├── public/
+│   ├── src/
+│   └── package.json
+
+
+----
+
+## 📦 Installation
 
 ### 1. Cloner le dépôt
 ```bash
 git clone https://github.com/votre-utilisateur/siteStreaming-JS-react.git
 cd siteStreaming-JS-react
-2. Démarrer le backend
-bash
 
+2. Démarrer le backend
 cd App-Serveur
 npm install
 node server.js
- Configurez votre .env avec :
-
-env
-
+Créer un fichier .env dans App-Serveur/ avec :
 MONGODB_URI=mongodb://localhost:27017/streaming
-SECRET_KEY=...votre_clé...
+SECRET_KEY=ma_clé_secrète
 PORT=5000
-3. Démarrer le frontend
-bash
 
+3. Démarrer le frontend
 cd ../siteStreaming
 npm install
 npm start
-
-
- Fonctionnalités
- - Authentification JWT (connexion / inscription)
-
-- Upload, modification et suppression de vidéos
-
-- Interface moderne pour visualiser les vidéos
-
-- Envoi d’e-mail de confirmation (via mailer.js)
-
-- Middleware de protection des routes (verifyToken.js)
-
- Structure
-
-siteStreaming-JS-react/
-├── App-Serveur/        → API REST avec Express + MongoDB
-├── siteStreaming/      → Application React
-
-
-Ajouter les rôles utilisateur (admin / viewer)
-
-Prévisualisation vidéos via lecteur React
-
-Design responsive mobile
-
-
-
-
-
-
