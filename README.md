@@ -9,6 +9,7 @@ Ce projet est une plateforme de streaming vidéo complète réalisée en **React
 ### Frontend (React)
 - React.js
 - React Router
+- Javascript
 - CSS personnalisé
 - Axios pour les requêtes API
 
