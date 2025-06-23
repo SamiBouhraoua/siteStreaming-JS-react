@@ -19,6 +19,15 @@ Ce projet est une plateforme de streaming vidéo complète réalisée en **React
 - Nodemailer
 ---
 
+ Structure
+
+siteStreaming-JS-react/
+
+├── App-Serveur/        → API REST avec Express + MongoDB
+
+├── siteStreaming/      → Application React
+
+----
 ✨ Fonctionnalités
 - Authentification sécurisée avec JWT
 
